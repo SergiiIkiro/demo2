@@ -1,8 +1,9 @@
 from tkinter import *
 window=Tk()
-window.title("Calulator")
-entry1=Entry(window,width=60,borderwidth=10,bg="light green")
+window.title("Calculator")
+entry1=Entry(window,width=60,borderwidth=10,bg="light blue")
 entry1.grid(row=0,column=0,columnspan=4,padx=10,pady=10)
+
 def clickbutton (value):
     current_eq=str(entry1.get())
 
@@ -15,6 +16,7 @@ def clickbutton (value):
     else:
         entry1.delete(0,END)
         entry1.insert(0,current_eq+value)
+
 def addButton(num):
     return Button(window,padx=16,bd=8,fg="blue",text=num,width=5, command=lambda:clickbutton (str(num)))
 def createButton():
@@ -41,7 +43,6 @@ def createButton():
     row3=[btton1,btton2,btton3,btton_mult]
     row4=[btton_clear,btton0,btton_equal,btton_div]
 
-    
     r=1 
     for row in[row1,row2,row3,row4]:
         c=0
@@ -61,11 +62,6 @@ def clickbutton (value):
     else:
         entry1.delete(0,END)
         entry1.insert(0,current_eq+value)
-
-
-
-
-
 
 
 createButton()
