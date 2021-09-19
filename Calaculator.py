@@ -4,19 +4,6 @@ window.title("Calculator")
 entry1=Entry(window,width=60,borderwidth=10,bg="light blue")
 entry1.grid(row=0,column=0,columnspan=4,padx=10,pady=10)
 
-def clickbutton (value):
-    current_eq=str(entry1.get())
-
-    if value =='C':
-       entry1.delete(-1,END)
-    elif value =='=':
-       answer=str(eval(current_eq)) 
-       entry1.delete(-1,END)
-       entry1.insert(0,answer)
-    else:
-        entry1.delete(0,END)
-        entry1.insert(0,current_eq+value)
-
 def addButton(num):
     return Button(window,padx=16,bd=8,fg="blue",text=num,width=5, command=lambda:clickbutton (str(num)))
 def createButton():
