@@ -5,7 +5,8 @@ entry1 = Entry(window, width=60, borderwidth=10, bg="light green")
 entry1.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 
 def addButton(num):
-    return Button(window, padx=20, bd=8, fg="blue", text=num, width=5, command=lambda: clickButton(str(num)))
+    return Button(window, padx=20, bd=8, fg="blue", text=num, width=5, command=lambda: clickButton
+    (str(num)))
 def createButton():
     btton0 = addButton(0)
     btton1 = addButton(1)
