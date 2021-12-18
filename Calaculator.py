@@ -1,7 +1,7 @@
 from tkinter import *
 window = Tk()
 window.title("Calculator")
-entry1 = Entry(window, width=60, borderwidth=10, bg="light green")
+entry1 = Entry(window, width=60, borderwidth=10, bg="light blue")
 entry1.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 
 def addButton(num):
